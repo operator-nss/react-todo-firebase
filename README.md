@@ -1,4 +1,4 @@
-Reacr TodoList with Firebase
+React TodoList with Firebase
 
 Ссылка на сайт(https://https://react-firebase.bizsokolov.ru//)
 
