@@ -1,0 +1,96 @@
+.add-todo {
+  width: 100%;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  margin: 20px 3px 20px;
+  padding: 20px;
+  justify-content: center;
+
+  &__form {
+    display: flex;
+    gap: 20px;
+  }
+
+  &__item {
+    border-radius: 4px;
+    display: block;
+
+    input {
+      padding: 5px 10px;
+      height: 100%;
+      outline: none;
+    }
+  }
+
+
+
+  &__item--file {
+    display: flex;
+    align-items: center;
+    transition: background-color 0.3s ease 0s;
+
+    &.active {
+      background-color: red;
+      padding: 3px 5px;
+    }
+
+    label {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      border: 1px solid #ddd;
+      padding: 8px 15px;
+      cursor: pointer;
+      border-radius: 4px;
+      transition: all 0.3s ease 0s;
+      @media (any-hover: hover) {
+        &:hover {
+          background-color: #ddd;
+          color: #232323;
+        }
+      }
+    }
+
+
+  }
+
+  &__button {
+    display: flex;
+    gap: 8px;
+    border-radius: 4px;
+    align-items: center;
+    background-color: green;
+    padding: 4px 12px;
+    border: 1px solid #ddd;
+  }
+
+}
+
+#input-file {
+  display: none;
+}
+
+.react-datepicker__input-container {
+  height: 100%;
+
+  input {
+    height: 100%;
+  }
+}
+
+.react-datepicker-wrapper {
+  height: 100%;
+}
+
+.delete-file {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+  @media (any-hover: hover) {
+    &:hover {
+      background-color: red;
+    }
+  }
+}
