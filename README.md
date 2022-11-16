@@ -1,6 +1,6 @@
 React TodoList with Firebase
 
-Ссылка на сайт(https://https://react-firebase.bizsokolov.ru/)
+Ссылка на сайт(https://react-firebase.bizsokolov.ru/)
 
 ## Особенности:
 - **Используется база данных Firebase**
