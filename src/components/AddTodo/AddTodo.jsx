@@ -24,7 +24,7 @@ const AddTodo = () => {
 	const addTask = async (e) => {
 		e.preventDefault();
 		
-		if (title !== "" || text !== "" || date !== "") {
+		if (title.length > 2 || text.length > 2 || date !== "") {
 			let fileName;
 			if (file) {
 				fileName = `${file.name + v4()}`
@@ -96,7 +96,7 @@ const AddTodo = () => {
 					</>}
 				
 				</div>
-				<button className='add-todo__button' type='submit'>
+				<button disabled={title.length < 2 || text.length < 2 || date === ""} className='add-todo__button' type='submit'>
 					<BiCommentAdd/>
 					Add ToDo
 				</button>
